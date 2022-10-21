@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*Common*/
 
 /*Header Begin*/
 #header {
@@ -11,7 +10,9 @@
 
 }
 #header .config-top-banner{
-    background: #484952;
+    background: #001d4d;
+    /*background: #484952;*/
+
     color: #ffffff;
 }
 #header .config-top-banner .slogan {
@@ -24,12 +25,20 @@
 }
 @keyframes change-color-icon {
     0% {color: #ffffff}
-    50% {color: #1e7e34}
+    50% {color: #0c9129
+    }
     100% {color: #ffffff}
 }
+#header .menu .col-2{
+    margin-top: -10px;
+    /*padding-bottom: 10px;*/
+}
+#header .menu .menu-right {
+    margin-top: 0;
+}
 #header .menu img {
-    width: 70px;
-    height: auto;
+    width: 40px;
+    height: 40px;
 }
 .menu .drop-menu {
     list-style-type: none;
@@ -46,7 +55,8 @@
     opacity: 0.6;
 }
 .menu .drop-menu .menu-item:hover a{
-    background: #e7e8e9;
+    /*background: #e7e8e9;*/
+    background: #f8f8f8;
     color: #1e7e34;
 }
 .menu .menu-right {
@@ -73,7 +83,6 @@
     top: 55px;
     right: 0;
     display: none;
-    z-index: 1;
 }
 .menu .menu-right .box-search {
     border: 1px solid #000000;
@@ -91,6 +100,7 @@
     padding: 0 10px;
 }
 /*Header End*/
+
 /*Slide Show Begin*/
 
 #slideShow .mySlides {
@@ -135,8 +145,8 @@
 /*Slide Show End*/
 /*Footer Begin*/
 #footer {
-    background: #484952;
-    color: #ffffff;
+    background: #f8f8f8;
+    color: #000000;
 }
 #footer> .container {
     padding-top: 32px;
@@ -151,7 +161,7 @@
     margin-bottom: 0;
 }
 #footer .social .social-icon a {
-    color: #ffffff;
+    color: #000000;
     font-size: 20px;
     margin-right: 10px;
 }
@@ -166,9 +176,10 @@
     bottom: 20px;
     width: 50%;
     left: 0;
-    border-top: 3px solid #ffffff;
+    border-top: 3px solid #000000;
 }
 #footer .copy-right {
-    background: #2f2f2f;
+    background: #494949;
+    color: white;
 }
 /*Footer End*/
