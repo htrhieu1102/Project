@@ -6,7 +6,7 @@
 
 /*Header Begin*/
 #header {
-    background: #f7f8fa;
+    background: #f8f8f8;
 
 }
 #header .config-top-banner{
@@ -79,6 +79,7 @@
     position: relative;
 }
 .menu .menu-right #search-container {
+    z-index: 1;
     position: absolute;
     top: 55px;
     right: 0;
@@ -183,3 +184,75 @@
     color: white;
 }
 /*Footer End*/
+
+
+/*Contact CSS*/
+/*Form Begin*/
+#content .contact_area .container{
+    padding-top: 40px;
+}
+
+#content .contact_area .container .row {
+    /*margin-left: 10px;*/
+    /*margin-right: 10px;*/
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#content .contact_area .container .row .col-lg-6 .contact_message h3{
+    font-weight: bolder;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#content .contact_area .container .row .col-lg-6 .contact_message ul li{
+    border-top: 1px solid #cecece;
+    padding: 10px 10px;
+    font-size: 15px;
+}
+#content .contact_area .container .row .contact_message #contact-form p label{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#content .contact_area .container .row .contact_message #contact-form p{
+    display: flex;
+    flex-direction: column;
+}
+
+#content .contact_area .container .row .contact_message #contact-form .contact_textarea{
+    display: flex;
+    flex-direction: column;
+}
+
+#content .contact_area .container .row .contact_message #contact-form .contact_textarea label{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#content .contact_area .container .row .contact_message #contact-form button{
+    margin-top: 20px;
+    width: 20%;
+    background: #0d8509;
+    border: none;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+/*Form End*/
+
+/*Map Location Begin*/
+
+#content .map .map_location{
+    text-align: center;
+    margin: 30px;
+}
+
+#content .map .map_location h3{
+    font-weight: bold;
+    font-size: 30px;
+    margin: 20px;
+}
+
+/*Map Location End*/
