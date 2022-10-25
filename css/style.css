@@ -7,12 +7,15 @@
 /*Header Begin*/
 #header {
     background: #f7f8fa;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
 
 }
 #header .config-top-banner{
     background: #001d4d;
-    /*background: #484952;*/
-
     color: #ffffff;
 }
 #header .config-top-banner .slogan {
@@ -25,13 +28,12 @@
 }
 @keyframes change-color-icon {
     0% {color: #ffffff}
-    50% {color: #0c9129
-    }
+    50% {color: #0c9129}
     100% {color: #ffffff}
 }
 #header .menu .col-2{
     margin-top: -10px;
-    /*padding-bottom: 10px;*/
+
 }
 #header .menu .menu-right {
     margin-top: 0;
@@ -61,7 +63,7 @@
 }
 .menu .menu-right {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 .menu .menu-right .icon-item{
     padding: 8px;
@@ -78,22 +80,59 @@
 .menu .menu-right .search {
     position: relative;
 }
+
 .menu .menu-right #search-container {
+    padding: 15px;
+    background: #fff;
+    z-index: 1;
     position: absolute;
-    top: 55px;
-    right: 0;
+    top: 60px;
+    right: -70px;
     display: none;
+    border: 1px solid #dfe3e8;
+    animation-delay: 1s;
+    border-radius: 5px;
+    width: 1100%;
+}
+
+.menu .menu-right #search-container:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    margin-top: -15px;
+    right: 70px;
+    border: solid 15px transparent;
+    border-bottom-color: #fff;
+    z-index: 1;
+}
+.menu .menu-right #search-container .title-in-search:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 48px;
+    width: 70%;
+    left: 15%;
+    border-top: 1px solid #000000;
 }
 .menu .menu-right .box-search {
-    border: 1px solid #000000;
+    border: 1px solid #dfe3e8;
 }
 .menu .menu-right .box-search input[type=search] {
+    padding: 10px;
     border: none;
+    font-weight: 500;
+    font-size: 14px;
     outline: none;
+    background: #f5f5f5;
+    width: 100%;
 }
 .menu .menu-right .box-search .btn-search {
-    width: 90px;
+    width: 45px;
+    line-height: 45px;
+    height: 45px;
     border: none;
+    font-size: 16px;
+    background: #f5f5f5;
 }
 .menu .menu-right .box-search .btn-close {
     border: none;
@@ -104,6 +143,7 @@
 /*Slide Show Begin*/
 
 #slideShow .mySlides {
+    margin-top: 102px;
     width: 100%;
     height: 500px;
     border-radius: 10px;
