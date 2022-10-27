@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="fontawesome/css/all.css">
 </head>
 <body>
 <div id="main">
@@ -28,7 +29,7 @@
                     <ul class="drop-menu">
                         <li class="menu-item"><a class="p-3" href="index.html">Trang Chủ</a></li>
                         <li class="menu-item"><a class="p-3" href="#">Sản Phẩm</a></li>
-                        <li class="menu-item"><a class="p-3" href="about-us.html">Giới Thiệu</a></li>
+                        <li class="menu-item"><a class="p-3" href="#">Giới Thiệu</a></li>
                         <li class="menu-item"><a class="p-3" href="contact.html">Liên Hệ</a></li>
                     </ul>
                 </div>
@@ -41,6 +42,7 @@
                                 <input type="search" placeholder="Nhập tìm kiếm ở đây">
                                 <button class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
                                 <button class="btn-close"><i class="fa-solid fa-xmark"></i></button>
+
                             </div>
                         </div>
                     </span>
@@ -56,29 +58,19 @@
         </div>
     </div>
 <!--    End Header-->
-<!--    Begin SlideShow-->
-    <div id="slideShow">
-        <div class="container position-relative">
-            <img class="mySlides" src="image/slideshow/cyberpunk-city.jpg" alt="">
-            <img class="mySlides" src="image/slideshow/nature.jpg" alt="">
-            <img class="mySlides" src="image/slideshow/sky.jpg" alt="">
-
-            <!--            <div class="leftSlide"><i class="fa-solid fa-angles-left"></i></div>-->
-<!--            <span class="rightSlide"><i class="fa-solid fa-angles-right"></i></span>-->
-            <div class="dotList">
-                <span class="dot" onclick="currentDiv(1)"></span>
-                <span class="dot" onclick="currentDiv(2)"></span>
-                <span class="dot" onclick="currentDiv(3)"></span>
+    <div id="content" style="height: 70vh">
+<!--    Begin About-us-->
+    <div class="about-us">
+            <div class="content-left">
+            <h>Giới thiệu chung.</h>
+            <p>Trang Hạc Key là một trang web mà mọi người có thể truy cập và tìm kiếm các loại mã bản quyền của các phần mềm khác nhau.</p><br>
+            <p>Với mức giá ưu đãi và nhiều chương trình khuyến mãi khác nhau. Hạc key cam kết sẽ đem lại nhiều sản phẩm chất lượng hơn nữa.</p>
             </div>
+        <div class="content-right">
+            <img class="img-right" src="image/about-us1.jpg">
         </div>
     </div>
-<!--    End SlideShow-->
-<!--    Begin Content-->
-    <div id="content" style="height: 50vh">
-
-    </div>
-<!--    End Content-->
-<!--    Begin Footer-->
+    <!--    Begin Footer-->
     <div id="footer">
         <div class="container d-flex justify-content-sm-between">
             <div class="about-us-footer">
@@ -119,15 +111,18 @@
             </div>
         </div>
     </div>
-<!--    End Footer-->
+    <!--    End Footer-->
 </div>
 <div id="back-to-top">
 
+</div>
 </div>
 
 <!--    Script-->
 <script src="js/jquery-3.6.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
+
+</div>
 </body>
 </html>
