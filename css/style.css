@@ -226,6 +226,80 @@
 
 }
 /*Back Top Top end*/
+/*Login Begin*/
+#login .modal-body{
+    background: #ffffff;
+    border-radius: 5px;
+}
+#login .modal-body .body-container {
+    border: 1px solid #c2c7d0;
+}
+#login .modal-body .choose div {
+    border-top: 2px solid #0f9d58;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 16px;
+}
+#login .modal-body .choose div:hover {
+    cursor: pointer ;
+}
+#login .modal-body .choose .sign-up-choose {
+    background: #c2c7d0;
+    border-top: none;
+    opacity: 0.8;
+
+}
+#login .modal-body form {
+    padding: 16px;
+}
+#login .modal-body .input-information {
+    margin: 10px 0;
+    border: 1px solid #c2c7d0;
+    border-radius: 4px;
+    opacity: 0.7;
+}
+#login .modal-body .input-information i {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+#login .modal-body .input-information input {
+    width: 91%;
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+}
+#login .modal-body .remember-forgot {
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+}
+#login .modal-body .remember-forgot input {
+    margin: 0 5px;
+}
+#login .modal-body .btn-login-container {
+    padding: 16px;
+}
+#login .modal-body .btn-login {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: #ffffff;
+    background: #0f9d58;
+}
+#login .modal-body .login-with {
+    padding: 0 16px 16px;
+    display: flex;
+    justify-content: center;
+}
+#login .modal-body .login-with>a {
+    margin: 0 10px;
+    font-size: 30px;
+    color: #0f9d58;
+}
+#login .modal-body .sign-up-container {
+    display: none;
+}
+/*Login End*/
 /*Contact CSS*/
 /*Form Begin*/
 #content .contact_area .container{
@@ -276,6 +350,7 @@
     border: none;
     color: #ffffff;
     font-size: 25px;
+
 }
 
 /*Form End*/
