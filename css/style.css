@@ -82,6 +82,11 @@
 .menu .menu-right .search {
     position: relative;
 }
+/*animation for search box*/
+.animation-show {
+
+}
+
 .menu .menu-right #search-container {
     padding: 15px;
     background: #fff;
@@ -165,6 +170,97 @@
     margin: 0 10px;
 }
 /*Slide Show End*/
+/*Content Main Page Begin*/
+#content .brand {
+    padding: 5px 20px;
+}
+#content .brand>a>img{
+    margin:0 calc((100% - 40px)/2);
+}
+#content .brand>a>p {
+    margin: 5px 0 0;
+    text-align: center;
+    color: #000000;
+    font-weight: 600;
+}
+#content .brand>a:hover {
+    text-decoration: none;
+}
+/*Product Content Begin*/
+#content .product-title {
+    padding: 20px;;
+}
+#content .product-title .section-title {
+    font-size: 25px;
+}
+#content .product-title .more-product {
+    line-height: 30px;
+    height: 30px;
+}
+#content .section-title i {
+    color: #fa8c16;
+    margin-right: 10px;
+}
+#content .products {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+#content .product-item .product-image{
+    width: 80%;
+    height: 200px;
+    margin: 0 10% 10px;
+    border-radius: 10px;
+}
+#content .product-item .product-type {
+    font-size: 12px;
+    opacity: .7;
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+#content .product-item .product-name {
+    font-size: 14px;
+    color: #0f9d58;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+#content .product-item .product-price,
+#content .product-item .currency {
+    margin: 10px 5px 10px 10px;
+    font-weight: 700;
+
+}
+#content .product-item .product-choose {
+    margin: 10px 0 20px 0px;
+    visibility: hidden;
+}
+#content .product-item:hover .product-choose {
+    visibility: visible;
+    animation-name: showChoose;
+    animation-duration: 0.3s;
+}
+@keyframes showChoose {
+    from {
+        transform: translate(20px);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+#content .product-item .product-choose>button {
+    margin-left: 10px;
+    width: 40px;
+    border: 2px solid #0f9d58;
+    color: #0f9d58;
+}
+#content .product-item .product-choose .detail {
+    margin-left: 0px;
+}
+#content .product-item .product-choose .detail a {
+    color: #0f9d58;
+}
+/*Product Content End*/
+/*Content Main Page End*/
 /*Footer Begin*/
 #footer {
     background: #f8f8f8;

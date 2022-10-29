@@ -189,24 +189,49 @@
                             <div class="sign-in-choose w-50 text-center">Đăng nhập</div>
                             <div class="sign-up-choose w-50 text-center">Đăng kí</div>
                         </div>
-                        <form action="">
-                            <div class="input-user">
-                                <i class="fa-solid fa-user"></i>
-                                <input type="text" name="uname" placeholder="Tài khoản hoặc Email">
+                        <div class="sign-in-container">
+                            <form action="">
+                                <div class="input-information">
+                                    <i class="fa-solid fa-user"></i>
+                                    <input type="text" name="uname" placeholder="Tài khoản hoặc Email">
+                                </div>
+                                <div class="input-information">
+                                    <i class="fa-solid fa-lock"></i>
+                                    <input type="password" name="pass" placeholder="Mật khẩu">
+                                </div>
+                            </form>
+                            <div class="remember-forgot">
+                                <div class="remember">
+                                    <input type="checkbox" name="check">Nhớ mật khẩu
+                                </div>
+                                <a href="#">Quên mật khẩu</a>
                             </div>
-                            <div class="input-pass">
-                                <i class="fa-solid fa-lock"></i>
-                                <input type="password" name="pass" placeholder="Mật khẩu">
+                            <div class="btn-login-container">
+                                <button class="btn-login btn-sign-in" type="button">Đăng nhập</button>
                             </div>
-                        </form>
-                        <div class="remember-forgot">
-                            <div class="remember">
-                                <input type="checkbox" name="check">Nhớ mật khẩu
-                            </div>
-                            <a href="#">Quên mật khẩu</a>
                         </div>
-                        <div class="btn-login-container">
-                            <button class="btn-login btn-sign-in" type="button">Đăng nhập</button>
+                        <div class="sign-up-container">
+                            <form action="">
+                                <div class="input-information">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <input type="email" name="email-sign-up" placeholder="Email">
+                                </div>
+                                <div class="input-information">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <input type="number" name="phone-sign-up" placeholder="Số điện thoại">
+                                </div>
+                                <div class="input-information">
+                                    <i class="fa-solid fa-lock"></i>
+                                    <input type="password" name="pass-sign-up" placeholder="Mật khẩu">
+                                </div>
+                                <div class="input-information">
+                                    <i class="fa-solid fa-lock"></i>
+                                    <input type="password" name="pass-sign-up" placeholder="Nhập lại mật khẩu">
+                                </div>
+                            </form>
+                            <div class="btn-login-container">
+                                <button class="btn-login btn-sign-up" type="button">Đăng ký</button>
+                            </div>
                         </div>
                         <p class="text-center">Hoặc</p>
                         <div class="login-with">

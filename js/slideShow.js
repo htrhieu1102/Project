@@ -42,7 +42,7 @@ function carousel() {
         slideIndex = 1
     }
     ;x[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].style.background = "#42fed0";
+    dots[slideIndex - 1].style.background = "#0f9d58";
     dots[slideIndex - 1].style.padding = "0 20px";
     setTimeout(carousel, 3000); // Change image every 2 seconds
     slideIndex++;

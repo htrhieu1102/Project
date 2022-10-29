@@ -12,12 +12,14 @@ $("#icon-search").on('click', function () {
     $("#search-container").css('display', 'block')
     $("#main").css('background', 'rgb(0, 0, 0, 0.5)')
     $("#footer").css('background', 'rgb(0, 0, 0, 0.5)')
+    // $('#search-container').addClass('animation-show')
 
 })
 $(".btn-close").on('click', function () {
     $("#search-container").css('display', 'none')
     $("#main").css('background', 'rgb(0, 0, 0, 0)')
     $("#footer").css('background', 'rgb(0, 0, 0, 0)')
+    // $('#search-container').removeClass('animation-show')
 })
 
 // switch tabs login and registration
