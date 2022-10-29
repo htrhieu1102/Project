@@ -14,20 +14,24 @@
     background: #f8f8f8;
 }
 #header .config-top-banner{
-    background: #001d4d;
+    background: #494949;
     color: #ffffff;
 }
 #header .config-top-banner .slogan {
-    font-size: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px;
+    margin-bottom: 0;
 }
 #header .config-top-banner .icon-slogan i{
     animation-name: change-color-icon;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
 }
 @keyframes change-color-icon {
     0% {color: #ffffff}
-    50% {color: #0c9129}
+    50% {color: #0f9d58}
     100% {color: #ffffff}
 }
 #header .menu{
@@ -58,7 +62,7 @@
 }
 .menu .drop-menu .menu-item:hover a{
     background: #f8f8f8;
-    color: #1e7e34;
+    color: #0f9d58;
 }
 .menu .menu-right {
     display: flex;
@@ -148,7 +152,7 @@
 
 /*Slide Show Begin*/
 #slideShow {
-    margin-top: 122px;
+    margin-top: 116px;
 }
 #slideShow .mySlides {
     width: 100%;
@@ -165,7 +169,7 @@
 #slideShow .dotList .dot {
     font-size: 8px;
     padding: 0 5px;
-    background-color: white;
+    background-color: #b7abab;
     border-radius: 50px;
     margin: 0 10px;
 }
@@ -188,14 +192,20 @@
 }
 /*Product Content Begin*/
 #content .product-title {
-    padding: 20px;;
+    margin-bottom: 20px;
 }
 #content .product-title .section-title {
-    font-size: 25px;
+    font-size: 20px;
+    padding: 5px;
 }
 #content .product-title .more-product {
-    line-height: 30px;
-    height: 30px;
+    background: #006fc9;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 50px;
+    text-decoration: none;
 }
 #content .section-title i {
     color: #fa8c16;
@@ -250,7 +260,8 @@
 #content .product-item .product-choose>button {
     margin-left: 10px;
     width: 40px;
-    border: 2px solid #0f9d58;
+    height: 30px;
+    border: 1px solid #0f9d58;
     color: #0f9d58;
 }
 #content .product-item .product-choose .detail {
@@ -267,14 +278,14 @@
     color: #000000;
 }
 #footer> .container {
-    padding-top: 20px;
-    padding-bottom: 16px;
+    padding: 10px 0;
 }
 #footer .about-us-footer .address p,
 #footer .product-footer p,
 #footer .policy p
 {
     margin-bottom: 8px;
+    font-size: 14px;
 }
 #footer .about-us-footer .address p:last-child {
     margin-bottom: 0;
@@ -285,20 +296,20 @@
     margin-right: 10px;
 }
 #footer .big-title-footer {
-    padding: 15px 0;
+    padding: 10px 0;
     position: relative;
 }
 #footer .big-title-footer::before {
     content: '';
     display: block;
     position: absolute;
-    bottom: 20px;
+    bottom: 12px;
     width: 50%;
     left: 0;
-    border-top: 2px solid #000000;
+    border-top: 1px solid #000000;
 }
 #footer .big-title-footer h4 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
 }
 #footer .copy-right {
