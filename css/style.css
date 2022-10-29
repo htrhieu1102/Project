@@ -476,3 +476,31 @@
 }
 
 /*Map Location End*/
+/*About us Begin*/
+#content .about-us {
+}
+#content .about-us .content-left {
+    padding-top: 150px;
+    padding-bottom: 20px;
+    text-align: center;
+
+}
+#content .about-us .content-left h {
+    color: #ff253a;
+    text-align: center;
+    font-size: 30px;
+}
+#content .about-us .content-left p {
+    color: #818182;
+    font-size: 20px;
+    padding-top: 20px;
+}
+#content .about-us .content-right {
+    text-align: center;
+    padding-bottom: 20px;
+}
+#content .about-us .content-right img {
+    width: 600px;
+    height: 600px;
+
+}
