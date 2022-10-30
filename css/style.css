@@ -88,20 +88,23 @@
     position: relative;
 }
 /*animation for search box*/
-.animation-show {
-
+@keyframes animation-search-show{
+    from {opacity: 0}
+    to {opacity: 1}
 }
-
+@keyframes animation-search-hide {
+    from {opacity: 1}
+    to {opacity: 0}
+}
 .menu .menu-right #search-container {
     padding: 15px;
     background: #fff;
     z-index: 1;
     position: absolute;
-    top: 70px;
+    top: 60px;
     right: -70px;
     display: none;
     border: 1px solid #dfe3e8;
-    animation-delay: 1s;
     border-radius: 5px;
     width: 1100%;
 }
@@ -120,7 +123,7 @@
     content: '';
     display: block;
     position: absolute;
-    top: 48px;
+    top: 45px;
     width: 70%;
     left: 15%;
     border-top: 1px solid #000000;
@@ -152,11 +155,14 @@
 /*Header End*/
 
 /*Slide Show Begin*/
+#slideShow {
+    overflow: hidden;
+}
 
 #slideShow .mySlides {
-    width: 100%;
-    height: calc(100vh - 96px);
-    border-radius: 10px;
+    margin: 0 auto;
+    width: 1400px;
+    height: 600px;
 }
 
 #slideShow .dotList {
@@ -247,12 +253,10 @@
     border-radius: 10px;
 }
 #content .product-item .product-image{
-    /*width: 90%;*/
     width: 100%;
-    height: 300px;
-    /*margin: 10px 5% 10px;*/
+    height: auto;
     margin-bottom: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 #content .product-item .product-type {
     font-size: 12px;
@@ -286,24 +290,38 @@
 }
 @keyframes showChoose {
     from {
-        transform: translate(20px);
+        transform: translateY(20px);
+        opacity: 0;
     }
     to {
-        transform: translate(0);
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 #content .product-item .product-choose>button {
     margin-left: 10px;
-    width: 40px;
-    height: 30px;
-    border: 1px solid #0f9d58;
-    color: #0f9d58;
+    padding: 5px;
+    background: linear-gradient(to right,#00c10c 0%,#fff200 70%,#00c10c 100%);
+    background-size: 300%, 1px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+
+
+}
+#content .product-item .product-choose>button:hover {
+    background: #00c10c
+
 }
 #content .product-item .product-choose .detail {
     margin-left: 0px;
 }
 #content .product-item .product-choose .detail a {
-    color: #0f9d58;
+    color: #ffffff;
+}
+#content .product-item .product-choose .add-to-cart i,
+#content .product-item .product-choose .detail i {
+    margin: 0 5px;
 }
 /*Product Content End*/
 /*Content Main Page End*/
