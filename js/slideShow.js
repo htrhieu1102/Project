@@ -26,8 +26,7 @@ function showDivs(n) {
     // for (let i = 0; i < dots.length; i++) {
     // }
     x[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].style.background = "#42fed0";
-    dots[slideIndex - 1].style.padding = "0 20px";
+    dots[slideIndex - 1].style.background = "#0f9d58";
 }
 // Auto next slide
 function carousel() {
@@ -43,7 +42,6 @@ function carousel() {
     }
     ;x[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].style.background = "#0f9d58";
-    dots[slideIndex - 1].style.padding = "0 20px";
     setTimeout(carousel, 3000); // Change image every 2 seconds
     slideIndex++;
 }
