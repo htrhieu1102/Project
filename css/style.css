@@ -468,21 +468,32 @@
 
 #content .contact_area .container .row {
     margin-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #content .contact_area .container .row .col-lg-6 .contact_message h3{
     font-weight: bolder;
     font-size: 30px;
     margin-bottom: 20px;
+    padding-left: 100px;
 }
 
 #content .contact_area .container .row .col-lg-6 .contact_message ul li{
     border-top: 1px solid #cecece;
     padding: 10px 10px;
     font-size: 15px;
+    list-style: none;
 }
+
+#content .contact_area .container .row .col-lg-6 .contact_message ul li i{
+    padding-right: 10px;
+}
+
+#content .contact_area .container .row .col-lg-6 .contact_message p{
+    font-size: 18px;
+}
+
 #content .contact_area .container .row .contact_message #contact-form p label{
     font-weight: bold;
     font-size: 18px;
@@ -493,9 +504,21 @@
     flex-direction: column;
 }
 
+#content .contact_area .container .row .contact_message #contact-form p input{
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
 #content .contact_area .container .row .contact_message #contact-form .contact_textarea{
     display: flex;
     flex-direction: column;
+}
+
+#content .contact_area .container .row .contact_message #contact-form .contact_textarea textarea{
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: 2px solid black;
+
 }
 
 #content .contact_area .container .row .contact_message #contact-form .contact_textarea label{
@@ -508,6 +531,7 @@
     width: 20%;
     background: #0d8509;
     border: none;
+    border-radius: 6px;
     color: #ffffff;
     font-size: 25px;
 
@@ -526,6 +550,10 @@
     font-weight: bold;
     font-size: 30px;
     margin: 20px;
+}
+
+#content .map .map_location iframe{
+    border-radius: 10px;
 }
 
 /*Map Location End*/
