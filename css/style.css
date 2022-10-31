@@ -557,4 +557,32 @@
     height: 600px;
 
 }
+/*Detail begin*/
+#content .detail-box {
+    margin-top: 90px;
+    overflow: auto;
+    width: 100%;
+}
+#content .detail-box .alp {
+    float: left;
+    width: 40%;
+}
+#content .detail-box .alp image {
+    padding-top: 230px;
+    height: 270px;
+}
+#content .detail-box .omg {
+    float: right;
+    width: 55%;
+}
+#content .detail-box .omg-text {
 
+}
+#content .detail-box .omg .detail-title {
+
+}
+#content .detail-box .omg .detail-title p {
+    font-size: 20px;
+    font-style: italic;
+}
+/*Detail end*/
