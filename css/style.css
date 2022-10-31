@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+#main {
+    padding-top: 96px;
+}
 /*Header Begin*/
 #header {
     position: fixed;
@@ -35,7 +37,7 @@
     100% {color: #ffffff}
 }
 #header .menu{
-    margin:10px 0 ;
+    /*margin:10px 0 ;*/
 }
 #header .menu .col-2{
     margin-top: -10px;
@@ -61,7 +63,7 @@
     font-weight: 700;
 }
 .menu .drop-menu .menu-item:hover a{
-    background: #f8f8f8;
+    background: rgba(0,0,0,0.1);
     color: #0f9d58;
 }
 .menu .menu-right {
@@ -70,12 +72,11 @@
 }
 .menu .menu-right .icon-item{
     padding:13px 8px 8px 8px;
-    font-size: 20px;
+    font-size: 16px;
     margin-top: -15px;
 }
 .menu .menu-right .icon-item span {
     color: #000000;
-    /*opacity: 0.6;*/
 }
 .menu .menu-right .icon-item span:hover {
     cursor: pointer;
@@ -87,25 +88,28 @@
     position: relative;
 }
 /*animation for search box*/
-.animation-show {
-
+@keyframes animation-search-show{
+    from {opacity: 0}
+    to {opacity: 1}
 }
-
+@keyframes animation-search-hide {
+    from {opacity: 1}
+    to {opacity: 0}
+}
 .menu .menu-right #search-container {
     padding: 15px;
     background: #fff;
     z-index: 1;
     position: absolute;
-    top: 70px;
+    top: 60px;
     right: -70px;
     display: none;
     border: 1px solid #dfe3e8;
-    animation-delay: 1s;
     border-radius: 5px;
     width: 1100%;
 }
 
-.menu .menu-right #search-container:before {
+.menu .menu-right #search-container::before {
     content: "";
     position: absolute;
     top: -25px;
@@ -115,11 +119,11 @@
     border-bottom-color: #fff;
     z-index: 1;
 }
-.menu .menu-right #search-container .title-in-search:before {
+.menu .menu-right #search-container .title-in-search::before {
     content: '';
     display: block;
     position: absolute;
-    top: 48px;
+    top: 45px;
     width: 70%;
     left: 15%;
     border-top: 1px solid #000000;
@@ -152,13 +156,13 @@
 
 /*Slide Show Begin*/
 #slideShow {
-    margin-top: 116px;
+    overflow: hidden;
 }
+
 #slideShow .mySlides {
-    width: 100%;
+    margin: 0 auto;
+    width: 1400px;
     height: 600px;
-    border-radius: 10px;
-    opacity: 0.8;
 }
 
 #slideShow .dotList {
@@ -175,6 +179,9 @@
 }
 /*Slide Show End*/
 /*Content Main Page Begin*/
+#content {
+    margin-bottom: 20px;
+}
 #content .brand {
     padding: 5px 20px;
 }
@@ -192,13 +199,38 @@
 }
 /*Product Content Begin*/
 #content .product-title {
-    margin-bottom: 20px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
 }
 #content .product-title .section-title {
     font-size: 20px;
-    padding: 5px;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-bottom: 3px solid #2dd100;
+    border-radius: 2px;
+    position: relative;
 }
+/*#content .product-title .section-title::before {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    border: 3px solid #ffffff;*/
+/*    border-radius: 2px;*/
+/*    bottom: -4px;*/
+/*    width: 5%;*/
+/*    left: 10%;*/
+/*}*/
+/*#content .product-title .section-title::after {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    border: 3px solid #ffffff;*/
+/*    border-radius: 2px;*/
+/*    bottom: -4px;*/
+/*    width: 30%;*/
+/*    right: 20%;*/
+/*}*/
 #content .product-title .more-product {
+    margin: 10px 0;
     background: #006fc9;
     color: #ffffff;
     font-size: 15px;
@@ -216,10 +248,14 @@
     grid-gap: 1rem;
     grid-template-columns: repeat(4, 1fr);
 }
+#content .product-item {
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+}
 #content .product-item .product-image{
-    width: 80%;
-    height: 200px;
-    margin: 0 10% 10px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
     border-radius: 10px;
 }
 #content .product-item .product-type {
@@ -240,6 +276,9 @@
     font-weight: 700;
 
 }
+#content .product-item .currency {
+    margin-left: 0;
+}
 #content .product-item .product-choose {
     margin: 10px 0 20px 0px;
     visibility: hidden;
@@ -251,24 +290,38 @@
 }
 @keyframes showChoose {
     from {
-        transform: translate(20px);
+        transform: translateY(20px);
+        opacity: 0;
     }
     to {
-        transform: translate(0);
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 #content .product-item .product-choose>button {
     margin-left: 10px;
-    width: 40px;
-    height: 30px;
-    border: 1px solid #0f9d58;
-    color: #0f9d58;
+    padding: 5px;
+    background: linear-gradient(to right,#00c10c 0%,#fff200 70%,#00c10c 100%);
+    background-size: 300%, 1px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+
+
+}
+#content .product-item .product-choose>button:hover {
+    background: #00c10c
+
 }
 #content .product-item .product-choose .detail {
     margin-left: 0px;
 }
 #content .product-item .product-choose .detail a {
-    color: #0f9d58;
+    color: #ffffff;
+}
+#content .product-item .product-choose .add-to-cart i,
+#content .product-item .product-choose .detail i {
+    margin: 0 5px;
 }
 /*Product Content End*/
 /*Content Main Page End*/
@@ -415,21 +468,32 @@
 
 #content .contact_area .container .row {
     margin-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #content .contact_area .container .row .col-lg-6 .contact_message h3{
     font-weight: bolder;
     font-size: 30px;
     margin-bottom: 20px;
+    padding-left: 100px;
 }
 
 #content .contact_area .container .row .col-lg-6 .contact_message ul li{
     border-top: 1px solid #cecece;
     padding: 10px 10px;
     font-size: 15px;
+    list-style: none;
 }
+
+#content .contact_area .container .row .col-lg-6 .contact_message ul li i{
+    padding-right: 10px;
+}
+
+#content .contact_area .container .row .col-lg-6 .contact_message p{
+    font-size: 18px;
+}
+
 #content .contact_area .container .row .contact_message #contact-form p label{
     font-weight: bold;
     font-size: 18px;
@@ -440,9 +504,21 @@
     flex-direction: column;
 }
 
+#content .contact_area .container .row .contact_message #contact-form p input{
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
 #content .contact_area .container .row .contact_message #contact-form .contact_textarea{
     display: flex;
     flex-direction: column;
+}
+
+#content .contact_area .container .row .contact_message #contact-form .contact_textarea textarea{
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: 2px solid black;
+
 }
 
 #content .contact_area .container .row .contact_message #contact-form .contact_textarea label{
@@ -455,6 +531,7 @@
     width: 20%;
     background: #0d8509;
     border: none;
+    border-radius: 6px;
     color: #ffffff;
     font-size: 25px;
 
@@ -473,6 +550,10 @@
     font-weight: bold;
     font-size: 30px;
     margin: 20px;
+}
+
+#content .map .map_location iframe{
+    border-radius: 10px;
 }
 
 /*Map Location End*/
@@ -504,3 +585,4 @@
     height: 600px;
 
 }
+

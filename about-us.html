@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+
 </head>
 <body>
 <div id="main">
-<!--    Begin Header-->
+    <!--    Begin Header-->
     <div id="header">
         <div class="config-top-banner">
-            <p class="slogan text-center font-weight-bold p-2 mb-0">
+            <p class="slogan">
                 Xài Key bản quyền
                 <span class="icon-slogan mr-1 ml-1">
                             <i class="fa-sharp fa-solid fa-key"></i>
@@ -29,7 +31,7 @@
                     <ul class="drop-menu">
                         <li class="menu-item"><a class="p-3" href="index.html">Trang Chủ</a></li>
                         <li class="menu-item"><a class="p-3" href="#">Sản Phẩm</a></li>
-                        <li class="menu-item"><a class="p-3" href="#">Giới Thiệu</a></li>
+                        <li class="menu-item"><a class="p-3" href="about-us.html">Giới Thiệu</a></li>
                         <li class="menu-item"><a class="p-3" href="contact.html">Liên Hệ</a></li>
                     </ul>
                 </div>
@@ -42,7 +44,6 @@
                                 <input type="search" placeholder="Nhập tìm kiếm ở đây">
                                 <button class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
                                 <button class="btn-close"><i class="fa-solid fa-xmark"></i></button>
-
                             </div>
                         </div>
                     </span>
@@ -51,72 +52,152 @@
                         <span>0</span>
                     </span>
                     <span class="icon-item">
-                        <span><i class="fa-regular fa-user"></i></span>
+                        <span><i class="fa-regular fa-user" class="btn btn-primary" data-toggle="modal"
+                                 data-target="#exampleModal"></i></span>
                     </span>
                 </div>
             </div>
         </div>
     </div>
-<!--    End Header-->
+    <!--    End Header-->
     <div id="content" style="height: 70vh">
-<!--    Begin About-us-->
-    <div class="about-us">
+        <!--    Begin About-us-->
+        <div class="about-us">
             <div class="content-left">
-            <h>Giới thiệu chung.</h>
-            <p>Trang Hạc Key là một trang web mà mọi người có thể truy cập và tìm kiếm các loại mã bản quyền của các phần mềm khác nhau.</p><br>
-            <p>Với mức giá ưu đãi và nhiều chương trình khuyến mãi khác nhau. Hạc key cam kết sẽ đem lại nhiều sản phẩm chất lượng hơn nữa.</p>
+                <h>Giới thiệu chung.</h>
+                <p>Trang Hạc Key là một trang web mà mọi người có thể truy cập và tìm kiếm các loại mã bản quyền của các
+                    phần mềm khác nhau.</p><br>
+                <p>Với mức giá ưu đãi và nhiều chương trình khuyến mãi khác nhau. Hạc key cam kết sẽ đem lại nhiều sản
+                    phẩm chất lượng hơn nữa.</p>
             </div>
-        <div class="content-right">
-            <img class="img-right" src="image/about-us1.jpg">
+            <div class="content-right">
+                <img class="img-right" src="image/about-us1.jpg">
+            </div>
         </div>
-    </div>
-    <!--    Begin Footer-->
-    <div id="footer">
-        <div class="container d-flex justify-content-sm-between">
-            <div class="about-us-footer">
-                <div class="big-title-footer"><h4>THÔNG TIN LIÊN HỆ</h4></div>
-                <div class="address">
-                    <p><i class="fa-solid fa-house"></i> Đại học Nông Lâm TpHCM</p>
-                    <p><i class="fa-solid fa-envelope"></i> 20130260@st.hcmuaf.edu.vn</p>
-                    <p><i class="fa-solid fa-phone"></i> 0852995378</p>
+        <!--    Begin Footer-->
+        <div id="footer">
+            <div class="container d-flex justify-content-sm-between">
+                <div class="about-us-footer">
+                    <div class="big-title-footer"><h4>THÔNG TIN LIÊN HỆ</h4></div>
+                    <div class="address">
+                        <p><i class="fa-solid fa-house"></i> Đại học Nông Lâm TpHCM</p>
+                        <p><i class="fa-solid fa-envelope"></i> 20130260@st.hcmuaf.edu.vn</p>
+                        <p><i class="fa-solid fa-phone"></i> 0852995378</p>
+                    </div>
+                </div>
+                <div class="product-footer">
+                    <div class="big-title-footer"><h4>SẢN PHẨM</h4></div>
+                    <p>Windows</p>
+                    <p>Microsoft Office</p>
+                    <p>Anti Virus</p>
+                    <p>SQL Server</p>
+                    <p>Adobe</p>
+                </div>
+                <div class="policy">
+                    <div class="big-title-footer"><h4>CHÍNH SÁCH</h4></div>
+                    <p>Chính sách thanh toán</p>
+                    <p>Chính sách bảo hành</p>
+                    <p>Chính sách đổi trả</p>
+                    <p>Chính sách bảo mật</p>
+                </div>
+                <div class="social">
+                    <div class="big-title-footer"><h4>XÃ HỘI</h4></div>
+                    <div class="social-icon">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
                 </div>
             </div>
-            <div class="product-footer">
-                <div class="big-title-footer"><h4>SẢN PHẨM</h4></div>
-                <p>Windows</p>
-                <p>Microsoft Office</p>
-                <p>Anti Virus</p>
-                <p>SQL Server</p>
-                <p>Adobe</p>
-            </div>
-            <div class="policy">
-                <div class="big-title-footer"><h4>CHÍNH SÁCH</h4></div>
-                <p>Chính sách thanh toán</p>
-                <p>Chính sách bảo hành</p>
-                <p>Chính sách đổi trả</p>
-                <p>Chính sách bảo mật</p>
-            </div>
-            <div class="social">
-                <div class="big-title-footer"><h4>XÃ HỘI</h4></div>
-                <div class="social-icon">
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <div class="copy-right p-2">
+                <div class="container">
+                    <p class="mb-0"><i class="fa-regular fa-copyright mr-2"></i>Bản quyền thuộc về Hạc Key Shop</p>
                 </div>
             </div>
         </div>
-        <div class="copy-right p-2">
-            <div class="container">
-                <p class="mb-0"><i class="fa-regular fa-copyright mr-2"></i>Bản quyền thuộc về Hạc Key Shop</p>
+        <!--    End Footer-->
+    </div>
+    <!--    Begin Back to top-->
+    <div id="back-to-top">
+        <a class="link-btt" href="#main"><i class="fa-sharp fa-solid fa-arrow-up"></i></a>
+    </div>
+    <!--    End Back to top-->
+</div>
+<!--Begin Login-->
+<div id="login">
+    <!-- Modal -->
+    <div class="modal fade pt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content pl-3 pr-3" style="background: #efefef">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Đăng nhập để tiếp tục</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="body-container">
+                        <div class="choose d-flex">
+                            <div class="sign-in-choose w-50 text-center">Đăng nhập</div>
+                            <div class="sign-up-choose w-50 text-center">Đăng kí</div>
+                        </div>
+                        <div class="sign-in-container">
+                            <form action="">
+                                <div class="input-information">
+                                    <i class="fa-solid fa-user"></i>
+                                    <input type="text" name="uname" placeholder="Tài khoản hoặc Email">
+                                </div>
+                                <div class="input-information">
+                                    <i class="fa-solid fa-lock"></i>
+                                    <input type="password" name="pass" placeholder="Mật khẩu">
+                                </div>
+                            </form>
+                            <div class="remember-forgot">
+                                <div class="remember">
+                                    <input type="checkbox" name="check">Nhớ mật khẩu
+                                </div>
+                                <a href="#">Quên mật khẩu</a>
+                            </div>
+                            <div class="btn-login-container">
+                                <button class="btn-login btn-sign-in" type="button">Đăng nhập</button>
+                            </div>
+                        </div>
+                        <div class="sign-up-container">
+                            <form action="">
+                                <div class="input-information">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <input type="email" name="email-sign-up" placeholder="Email">
+                                </div>
+                                <div class="input-information">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <input type="number" name="phone-sign-up" placeholder="Số điện thoại">
+                                </div>
+                                <div class="input-information">
+                                    <i class="fa-solid fa-lock"></i>
+                                    <input type="password" name="pass-sign-up" placeholder="Mật khẩu">
+                                </div>
+                                <div class="input-information">
+                                    <i class="fa-solid fa-lock"></i>
+                                    <input type="password" name="pass-sign-up" placeholder="Nhập lại mật khẩu">
+                                </div>
+                            </form>
+                            <div class="btn-login-container">
+                                <button class="btn-login btn-sign-up" type="button">Đăng ký</button>
+                            </div>
+                        </div>
+                        <p class="text-center">Hoặc</p>
+                        <div class="login-with">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-google"></i></a>
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!--    End Footer-->
 </div>
-<div id="back-to-top">
-
-</div>
-</div>
+<!--End Login-->
 
 <!--    Script-->
 <script src="js/jquery-3.6.1.min.js"></script>

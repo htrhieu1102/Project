@@ -27,14 +27,15 @@
         $("#search-container").css('display', 'block')
         $("#main").css('background', 'rgb(0, 0, 0, 0.5)')
         $("#footer").css('background', 'rgb(0, 0, 0, 0.5)')
-        // $('#search-container').addClass('animation-show')
+        $('#search-container').css('animation', 'animation-search-show 0.5s')
     
     })
     $(".btn-close").on('click', function () {
+        // $('#search-container').css('animation', 'animation-search-hide 1s')
         $("#search-container").css('display', 'none')
         $("#main").css('background', 'rgb(0, 0, 0, 0)')
         $("#footer").css('background', 'rgb(0, 0, 0, 0)')
-        // $('#search-container').removeClass('animation-show')
+
     })
     
     // switch tabs login and registration
