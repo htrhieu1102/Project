@@ -1,45 +1,52 @@
-// scroll hide menu bar
-let prevScroll = window.scrollY;
-window.addEventListener('scroll', function () {
-    if (window.scrollY == 0) {
-        $('.config-top-banner').css('display', 'block')
-    } else {
-        $('.config-top-banner').css('display', 'none')
-    }
-    if (prevScroll < window.scrollY) {
-        $('#header').css('display', 'none')
-    } else {
-        $('#header').css('display', 'block')
-    }
-    prevScroll = window.scrollY;
-})
-// animation scroll top
-$(".link-btt").on('click', function (event) {
-    if (this.hash !== "") {
-        event.preventDefault();
-        $('html, body').animate({
-            scrollTop: 0
-        }, 800);
-    }
-});
-//show box search
-$("#icon-search").on('click', function () {
-    $("#search-container").css('display', 'block')
-    $("#main").css('background', 'rgb(0, 0, 0, 0.5)')
-    $(".mySlides").css('opacity', '0.5')
-    $("#footer").css('background', 'rgb(0, 0, 0, 0.5)')
-    $('#search-container').css('animation', 'animation-search-show 0.5s')
 
-})
-$(".btn-close").on('click', function () {
-    // $('#search-container').css('animation', 'animation-search-hide 1s')
-    $("#search-container").css('display', 'none')
-    $("#main").css('background', 'rgb(0, 0, 0, 0)')
-    $("#footer").css('background', 'rgb(0, 0, 0, 0)')
-    $(".mySlides").css('opacity', '1')
+    // scroll hide menu bar
+    let prevScroll = window.scrollY;
+    window.addEventListener('scroll', function () {
+        if (window.scrollY == 0) {
+            $('.config-top-banner').css('display', 'block')
+        } else {
+            $('.config-top-banner').css('display', 'none')
+        }
+        if (prevScroll < window.scrollY) {
+            $('#header').css('display', 'none')
+        } else {
+            $('#header').css('display', 'block')
+        }
+        prevScroll = window.scrollY;
+    })
+    // animation scroll top
+    $(".link-btt").on('click', function (event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: 0
+            }, 800);
+        }
+    });
+    let count_click = 0
+    //show box search
+    $("#icon-search").on('click', function () {
+        if (count_click == 0) {
+            $("#search-container").css('display', 'block')
+            // $("#main,#footer").css('background', 'rgba(0, 0, 0,0.5)')
+            // $("img").css('opacity', '0.5')
+            $('#search-container').css('animation', 'animation-search-show 0.5s')
+            count_click = 1;
+        } else {
+            $("#search-container").css('display', 'none')
+            $("#main,#footer").css('background', 'rgb(0, 0, 0, 0)')
+            $("img, button").css('opacity', '1')
+            count_click = 0;
+        }
 
-
-})
+    })
+    $(".btn-close").on('click', function () {
+        // $('#search-container').css('animation', 'animation-search-hide 1s')
+        $("#search-container").css('display', 'none')
+        $("#main,#footer").css('background', 'rgb(0, 0, 0, 0)')
+        $("img, button").css('opacity', '1')
+        count_click = 0;
+        
 
 // switch tabs login and registration
 $('.sign-in-choose').on('click', function () {
@@ -76,4 +83,6 @@ window.addEventListener("click", function (event) {
 
     }
 })
+        
+     
 
