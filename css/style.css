@@ -101,7 +101,7 @@
     background: #fff;
     z-index: 1;
     position: absolute;
-    top: 60px;
+    top: 65px;
     right: -70px;
     display: none;
     border: 1px solid #dfe3e8;
@@ -112,10 +112,10 @@
 .menu .menu-right #search-container::before {
     content: "";
     position: absolute;
-    top: -25px;
+    top: -14px;
     margin-top: -15px;
-    right: 65px;
-    border: solid 20px transparent;
+    right: 68px;
+    border: solid 15px transparent;
     border-bottom-color: #fff;
     z-index: 1;
 }
@@ -181,6 +181,7 @@
 /*Content Main Page Begin*/
 #content {
     margin-bottom: 20px;
+    padding-top: 24px;
 }
 #content .brand {
     padding: 5px 20px;
@@ -211,24 +212,7 @@
     border-radius: 2px;
     position: relative;
 }
-/*#content .product-title .section-title::before {*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    border: 3px solid #ffffff;*/
-/*    border-radius: 2px;*/
-/*    bottom: -4px;*/
-/*    width: 5%;*/
-/*    left: 10%;*/
-/*}*/
-/*#content .product-title .section-title::after {*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    border: 3px solid #ffffff;*/
-/*    border-radius: 2px;*/
-/*    bottom: -4px;*/
-/*    width: 30%;*/
-/*    right: 20%;*/
-/*}*/
+
 #content .product-title .more-product {
     margin: 10px 0;
     background: #006fc9;
@@ -325,6 +309,91 @@
 }
 /*Product Content End*/
 /*Content Main Page End*/
+
+/*Product Page Begin*/
+#content .filter-container{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#content .filter-container .title-dots {
+    width: 23px;
+    height: 3px;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto 10px;
+    position: relative;
+    background-color: #2dd100;
+}
+#content .filter-container .title-dots::before,
+#content .filter-container .title-dots::after{
+    content: '';
+    position: absolute;
+    border-radius: 30px;
+    height: 3px;
+    width: 7px;
+    display: block;
+    position: absolute;
+    background-color: #2dd100;
+}
+#content .filter-container .title-dots::before {
+    left: -15px;
+}
+#content .filter-container .title-dots::after {
+    right: -15px;
+}
+#content .filter-container .title-filter {
+    line-height: 1.4;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    font-weight: bold;
+}
+#content .container-btn-filter {
+    display: flex;
+    justify-content: center;
+}
+#content .container-btn-filter .btn-filter {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 30px;
+    background: #2dd100;
+    border-radius: 5px;
+    color: #ffffff;
+    border: none;
+    transition: all .5s ease;
+}
+#content .container-btn-filter .btn-filter:hover {
+    background: #ffffff;
+    color: #2dd100;
+    border: 1px solid #2dd100;
+}
+#content .product-filter .product-filter-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+}
+#content .woocommerce-ordering .order-by {
+    margin: 20px 0;
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+    background: #f3f5fe;
+    border: none;
+}
+#content .product-filter .page-numbers .btn-number-pages:first-child,
+#content .product-filter .page-numbers .btn-number-pages:hover{
+    background: #2dd100;
+    color: #ffffff;
+}
+#content .product-filter .page-numbers .btn-number-pages{
+    padding: 5px 15px;
+    background: #d5d7e0;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+/*Product Page End*/
 /*Footer Begin*/
 #footer {
     background: #f8f8f8;
