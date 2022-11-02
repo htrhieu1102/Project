@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+<body>
+<!--    Begin Header-->
+<div id="header">
+    <div class="config-top-banner">
+        <p class="slogan">
+            Xài Key bản quyền
+            <span class="icon-slogan mr-1 ml-1">
+                            <i class="fa-sharp fa-solid fa-key"></i>
+                        </span>, nói không với crack!
+        </p>
+    </div>
+    <div class="container pt-3">
+        <div class="menu row">
+            <div class="col-2">
+                <img src="image/logoShopKey.png" alt="logo">
+            </div>
+            <div class="col-8">
+                <ul class="drop-menu">
+                    <li class="menu-item"><a class="p-3" href="index.html">Trang Chủ</a></li>
+                    <li class="menu-item"><a class="p-3" href="product.html">Sản Phẩm</a></li>
+                    <li class="menu-item"><a class="p-3" href="about-us.html">Giới Thiệu</a></li>
+                    <li class="menu-item"><a class="p-3" href="contact.html">Liên Hệ</a></li>
+                </ul>
+            </div>
+            <div class="menu-right col-2">
+                    <span class="icon-item search">
+                        <span id="icon-search"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <div id="search-container">
+                            <p class="title-in-search text-center">TÌM KIẾM</p>
+                            <div class="box-search d-flex">
+                                <input type="search" placeholder="Nhập tìm kiếm ở đây">
+                                <button class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                <button class="btn-close"><i class="fa-solid fa-xmark"></i></button>
+                            </div>
+                        </div>
+                    </span>
+                <span class="icon-item">
+                        <span><i class="fa-solid fa-bag-shopping"></i></span>
+                        <span>0</span>
+                    </span>
+                <span class="icon-item">
+                        <span><i class="fa-regular fa-user" class="btn btn-primary" data-toggle="modal"
+                                 data-target="#exampleModal"></i>
+                        </span>
+                    </span>
+            </div>
+        </div>
+    </div>
+</div>
+<!--    End Header-->
+
+<!--Begin Content-->
+<div id="wrapper">
+    <div class="container">
+        <div class="cart">
+            <div class="title">
+                <h3>Giỏ hàng</h3>
+                <div class="return_button">
+                    <ul>
+                        <li><a href="index.html">Trở lại <i class="fas fa-caret-square-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="title_cart">
+                <div class="product_name"><p>Tên sản phẩm</p></div>
+                <div class="product_price"><p>Giá tiền</p></div>
+                <div class="product_quantity"><p>Số lượng</p></div>
+                <div class="product_total"><p>Tổng cộng</p></div>
+            </div>
+            <div class="product_contain">
+                <div class="image">
+                    <img src="image/product-image/windows/key-windows-11-pro-1-510x510.png">
+                </div>
+                <div class="product_details">
+                    <div class="name">Key bản quyền Win 11 Pro</div>
+                    <p>Key kích hoạt windows 11 phiên bản professional</p>
+                </div>
+                <div class="price"><p>400.000 VND</p></div>
+                <div class="quantity">
+                    <input type="number" value="1" min="1">
+                    <button><i class="fas fa-trash-alt"></i></button>
+                </div>
+                <div class="total"><p>400.000 VND</p></div>
+            </div>
+            <div class="product_contain">
+                <div class="image">
+                    <img src="image/product-image/design/autodesk-revit-ban-quyen.png">
+                </div>
+                <div class="product_details">
+                    <div class="name">Key bản quyền Autodesk Revit</div>
+                    <p>Key kích hoạt phần mềm Autodesk Revit</p>
+                </div>
+                <div class="price"><p>300.000 VND</p></div>
+                <div class="quantity">
+                    <input type="number" value="2" min="1">
+                    <button><i class="fas fa-trash-alt"></i></button>
+                </div>
+                <div class="total"><p>600.000 VND</p></div>
+            </div>
+            <div class="total_price">
+                <div class="discount_code">
+                    <p>Nhập mã giảm giá tại đây:</p>
+                    <input type="text" id="discount" placeholder="Mã giảm giá">
+                    <button><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="subtotal cf">
+                    <ul>
+                        <li class="totalRow"><span class="label">Tổng cộng:</span><span class="value">1.000.000 VND</span></li>
+                        <li class="totalRow"><span class="label">Chi phí vận chuyển:</span><span class="value">Miễn phí</span></li>
+                        <li class="totalRow"><span class="label">Thuế VAT (10%):</span><span class="value">100.000 VND</span></li>
+                        <li class="totalRow final"><span class="label">Thành tiền:</span><span class="value">1.100.000 VND</span></li>
+                        <li class="totalRow_button"><a href="#" class="btn_payment">Thanh toán</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Content-->
+
+<!--    Begin Footer-->
+<div id="footer">
+    <div class="container d-flex justify-content-sm-between">
+        <div class="about-us-footer">
+            <div class="big-title-footer"><h4>Thông Tin Liên Hệ</h4></div>
+            <div class="address">
+                <p><i class="fa-solid fa-house"></i> Đại học Nông Lâm TpHCM</p>
+                <p><i class="fa-solid fa-envelope"></i> 20130260@st.hcmuaf.edu.vn</p>
+                <p><i class="fa-solid fa-phone"></i> 0852995378</p>
+            </div>
+        </div>
+        <div class="product-footer">
+            <div class="big-title-footer"><h4>Sản Phẩm</h4></div>
+            <p>Windows</p>
+            <p>Microsoft Office</p>
+            <p>Anti Virus</p>
+            <p>SQL Server</p>
+            <p>Adobe</p>
+        </div>
+        <div class="policy">
+            <div class="big-title-footer"><h4>Chính Sách</h4></div>
+            <p>Chính sách thanh toán</p>
+            <p>Chính sách bảo hành</p>
+            <p>Chính sách đổi trả</p>
+            <p>Chính sách bảo mật</p>
+        </div>
+        <div class="social">
+            <div class="big-title-footer"><h4>Xã Hội</h4></div>
+            <div class="social-icon">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="copy-right p-2">
+        <div class="container">
+            <p class="mb-0"><i class="fa-regular fa-copyright mr-2"></i>Bản quyền thuộc về Hạc Key Shop</p>
+        </div>
+    </div>
+</div>
+<!--    End Footer-->
+<!--    Begin Back to top-->
+<div id="back-to-top">
+    <a class="link-btt" href="#main"><i class="fa-sharp fa-solid fa-arrow-up"></i></a>
+</div>
+<!--    End Back to top-->
+
+</body>
+</html>
