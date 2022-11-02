@@ -81,8 +81,22 @@
 .menu .menu-right .icon-item span:hover {
     cursor: pointer;
 }
-.menu .menu-right .icon-item:hover span {
+.menu .menu-right .icon-item:hover>span {
     color: #1e7e34;
+}
+.menu .menu-right .icon-cart {
+    position: relative;
+}
+.menu .menu-right .icon-cart .amount-cart {
+    position: absolute;
+    padding: 4px 7px;
+    font-size: 12px;
+    line-height: 12px;
+    background: red;
+    color: #ffffff;
+    top: -5px;
+    right: -14px;
+    border-radius: 50%;
 }
 .menu .menu-right .search {
     position: relative;
@@ -107,17 +121,28 @@
     border: 1px solid #dfe3e8;
     border-radius: 5px;
     width: 1100%;
-}
+    box-shadow: -2px -2px 5px -4px;
 
-.menu .menu-right #search-container::before {
+}
+.menu .menu-right #search-container .arrow-search {
+    width: 41px;
+    height: 27px;
+    top: -26px;
+    right: 65px;
+    position: absolute;
+    overflow: hidden;
+
+}
+.menu .menu-right #search-container .arrow-search::before {
     content: "";
     position: absolute;
-    top: -14px;
-    margin-top: -15px;
-    right: 68px;
-    border: solid 15px transparent;
-    border-bottom-color: #fff;
-    z-index: 1;
+    width: 27px;
+    height: 27px;
+    background: #fff;
+    transform: rotate(45deg);
+    top: 13px;
+    right: 7px;
+    box-shadow: -2px -2px 5px -4px;
 }
 .menu .menu-right #search-container .title-in-search::before {
     content: '';
