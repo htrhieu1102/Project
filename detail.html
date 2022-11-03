@@ -66,32 +66,27 @@
   <!--    End Header-->
   <!--    Begin Content-->
   <div id="content">
-    <div class="detail-box">
-      <div class="detail-box-alp">
-        <img class="img-product" src="../../../../../Project/image/product-image/antivirus/5766_0_trend_micro.png" alt="">
+    <div class="detail-content">
+      <div class="detail-box-img">
+        <img src="image/product-image/antivirus/5766_0_trend_micro.png" alt="">
       </div>
-      <div class="detail-box-omg">
-        <div class="detail-box-omg-text">
-          <p class="detail-title">Windows 10 (Home/Edu/Pro)</p>
-          <p class="detail-type">Windows</p>
-          <p class="detail-price">Giá: 100000</p><p class="currency">VND</p>
-          <p class="text-bolder">Thời hạn:</p><p class="text-normal">1 năm</p>
-          <p class="text-bolder">Bao gồm</p><p class="text-normal">Windows 10 dành cho home, edu, pro</p>
-          <p class="text-bolder">Hỗ trợ:</p><p class="text-normal">Windows</p>
-          <p class="text-bolder">Số lượng thiết bị:</p><p class="text-normal">4</p>
+      <div class="detail-box-right">
+        <h1>Windows 10 (Home/Edu/Pro)</h1>
+        <h2>Windows</h2>
+        <p>-Giá: 100000VND.<br>
+          -Thời hạn: 1 năm.<br>
+          -Bao gồm: Windows 10 dành cho home, edu, pro.<br>
+          -Hỗ trợ: Windows.<br>
+          -Số lượng thiết bị: 4.</p>
+        <div class="quantity buttons_added">
+          <input type="button" value="-" class="minus button is-form">
+          <input type="number" class="number-sale" step="1" min="1" max="9999" name="quantity" value="1" title="SL" size="4" pattern="[0-9]*" inputmode="numeric">
+          <input type="button" value="+" class="plus button is-form">
+          <button type="submit" name="add-to-cart" class="add-to-cart-button">Thêm vào giỏ</button>
         </div>
       </div>
-      <div class="quantity buttons_added">
-        <input type="button" value="-" class="minus button is-form">		<label class="screen-reader-text" for="quantity_635fe0f0029e4">Số lượng</label>
-        <input type="number" id="quantity_635fe0f0029e4" class="input-text qty text" step="1" min="1" max="9999" name="quantity" value="1" title="SL" size="4" pattern="[0-9]*" inputmode="numeric" aria-labelledby="Loa Bluetooth Sony SRS-X11 10W số lượng">
-        <input type="button" value="+" class="plus button is-form">
-      </div>
-      <button type="submit" name="add-to-cart" class="single_add_to_cart_button button alt">Thêm vào giỏ</button>
-      <button type="submit" name="contact" class="contact-message-to-page">
-        <p>Liên hệ tư vấn</p>
-        <span>Liên hệ tư vấn nhanh qua facebook, zalo</span>
-      </button>
     </div>
+
   </div>
   <!--  End Content-->
   <!--    Begin Footer-->
@@ -141,88 +136,88 @@
     <a class="link-btt" href="#main"><i class="fa-sharp fa-solid fa-arrow-up"></i></a>
   </div>
   <!--    End Back to top-->
-</div>
-<!--Begin Login-->
-<div id="login">
-  <!-- Modal -->
-  <div class="modal fade pt-2" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content pl-3 pr-3" style="background: #efefef">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Đăng nhập để tiếp tục</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="body-container">
-            <div class="choose d-flex">
-              <div class="sign-in-choose w-50 text-center">Đăng nhập</div>
-              <div class="sign-up-choose w-50 text-center">Đăng kí</div>
-            </div>
-            <div class="sign-in-container">
-              <form action="">
-                <div class="input-information">
-                  <i class="fa-solid fa-user"></i>
-                  <input type="text" name="uname" placeholder="Tài khoản hoặc Email">
-                </div>
-                <div class="input-information">
-                  <i class="fa-solid fa-lock"></i>
-                  <input type="password" name="pass" placeholder="Mật khẩu">
-                </div>
-              </form>
-              <div class="remember-forgot">
-                <div class="remember">
-                  <input type="checkbox" name="check">Nhớ mật khẩu
-                </div>
-                <a href="#">Quên mật khẩu</a>
+
+  <!--Begin Login-->
+  <div id="login">
+    <!-- Modal -->
+    <div class="modal fade pt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content pl-3 pr-3" style="background: #efefef">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Đăng nhập để tiếp tục</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="body-container">
+              <div class="choose d-flex">
+                <div class="sign-in-choose w-50 text-center">Đăng nhập</div>
+                <div class="sign-up-choose w-50 text-center">Đăng kí</div>
               </div>
-              <div class="btn-login-container">
-                <button class="btn-login btn-sign-in" type="button">Đăng nhập</button>
+              <div class="sign-in-container">
+                <form action="">
+                  <div class="input-information">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="uname" placeholder="Tài khoản hoặc Email">
+                  </div>
+                  <div class="input-information">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="pass" placeholder="Mật khẩu">
+                  </div>
+                </form>
+                <div class="remember-forgot">
+                  <div class="remember">
+                    <input type="checkbox" name="check">Nhớ mật khẩu
+                  </div>
+                  <a href="#">Quên mật khẩu</a>
+                </div>
+                <div class="btn-login-container">
+                  <button class="btn-login btn-sign-in" type="button">Đăng nhập</button>
+                </div>
               </div>
-            </div>
-            <div class="sign-up-container">
-              <form action="">
-                <div class="input-information">
-                  <i class="fa-solid fa-envelope"></i>
-                  <input type="email" name="email-sign-up" placeholder="Email">
+              <div class="sign-up-container">
+                <form action="">
+                  <div class="input-information">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" name="email-sign-up" placeholder="Email">
+                  </div>
+                  <div class="input-information">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="number" name="phone-sign-up" placeholder="Số điện thoại">
+                  </div>
+                  <div class="input-information">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="pass-sign-up" placeholder="Mật khẩu">
+                  </div>
+                  <div class="input-information">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="pass-sign-up" placeholder="Nhập lại mật khẩu">
+                  </div>
+                </form>
+                <div class="btn-login-container">
+                  <button class="btn-login btn-sign-up" type="button">Đăng ký</button>
                 </div>
-                <div class="input-information">
-                  <i class="fa-solid fa-phone"></i>
-                  <input type="number" name="phone-sign-up" placeholder="Số điện thoại">
-                </div>
-                <div class="input-information">
-                  <i class="fa-solid fa-lock"></i>
-                  <input type="password" name="pass-sign-up" placeholder="Mật khẩu">
-                </div>
-                <div class="input-information">
-                  <i class="fa-solid fa-lock"></i>
-                  <input type="password" name="pass-sign-up" placeholder="Nhập lại mật khẩu">
-                </div>
-              </form>
-              <div class="btn-login-container">
-                <button class="btn-login btn-sign-up" type="button">Đăng ký</button>
               </div>
-            </div>
-            <p class="text-center">Hoặc</p>
-            <div class="login-with">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-google"></i></a>
-              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <p class="text-center">Hoặc</p>
+              <div class="login-with">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<!--End Login-->
+  <!--End Login-->
 
+  <!--    Script-->
+  <script src="js/jquery-3.6.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/slideShow.js"></script>
 
-<!--    Script-->
-<script src="../../../../../Project/js/jquery-3.6.1.min.js"></script>
-<script src="../../../../../Project/js/bootstrap.min.js"></script>
-<script src="../../../../../Project/js/main.js"></script>
-<script src="../../../../../Project/js/slideShow.js"></script>
 </body>
 </html>
