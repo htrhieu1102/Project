@@ -2,10 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-  <title>Title</title>
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="fontawesome/css/all.css">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
 </head>
 <body>
 <!--    Begin Header-->
@@ -70,9 +74,7 @@
             <div class="title">
                 <h3>Giỏ hàng</h3>
                 <div class="return_button">
-                    <ul>
-                        <li><a href="index.html">Trở lại <i class="fas fa-caret-square-right"></i></a></li>
-                    </ul>
+                    <a href="index.html">Trở lại <i class="fas fa-caret-square-right ml-2"></i></a>
                 </div>
             </div>
             <div class="title_cart">
@@ -88,7 +90,7 @@
                 </div>
                 <div class="product_details">
                     <div class="name">Key bản quyền Win 11 Pro</div>
-                    <p>Key kích hoạt windows 11 phiên bản professional</p>
+                    <p>Key kích hoạt Windows 11 phiên bản professional</p>
                 </div>
                 <div class="price"><p>400.000 VND</p></div>
                 <div class="quantity">
@@ -147,45 +149,56 @@
 
 <!--    Begin Footer-->
 <div id="footer">
-    <div class="container d-flex justify-content-sm-between">
-        <div class="about-us-footer">
-            <div class="big-title-footer"><h4>Thông Tin Liên Hệ</h4></div>
-            <div class="address">
-                <p><i class="fa-solid fa-house"></i> Đại học Nông Lâm TpHCM</p>
-                <p><i class="fa-solid fa-envelope"></i> 20130260@st.hcmuaf.edu.vn</p>
-                <p><i class="fa-solid fa-phone"></i> 0852995378</p>
+    <div class="container footer-main">
+        <div class="footer-left footer-column">
+            <div class="footer-logo ">
+                <a href="index.html">
+                    <img src="image/logoShopKey.png" alt="">
+                </a>
+            </div>
+            <div class="text-intro">
+                <p>Đăng kí ngay để nhận được các thông tin ưu đãi,
+                    khuyến mãi đến từ cửa hàng và cũng như cập nhật các tin tức thông tin
+                    về sản phẩm.
+                </p>
+            </div>
+            <div class="newsletter-sign-up">
+                <h2 class="newsletter-title">Đăng kí bản tin</h2>
+                <input class="newsletter-input" type="text" name="" id="" placeholder="Email">
+                <button class="newsletter-button">Gửi</button>
             </div>
         </div>
-        <div class="product-footer">
-            <div class="big-title-footer"><h4>Sản Phẩm</h4></div>
-            <p>Windows</p>
-            <p>Microsoft Office</p>
-            <p>Anti Virus</p>
-            <p>SQL Server</p>
-            <p>Adobe</p>
-        </div>
-        <div class="policy">
-            <div class="big-title-footer"><h4>Chính Sách</h4></div>
-            <p>Chính sách thanh toán</p>
-            <p>Chính sách bảo hành</p>
-            <p>Chính sách đổi trả</p>
-            <p>Chính sách bảo mật</p>
-        </div>
-        <div class="social">
-            <div class="big-title-footer"><h4>Xã Hội</h4></div>
-            <div class="social-icon">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <div class="footer-center footer-column">
+            <div class="footer-space"></div>
+            <h4 class="footer-title">Sản Phẩm</h4>
+            <div class="footer-list-product">
+                <a class="footer-product-item" href=""><i class="fa-solid fa-chevron-right"></i>Windows</a>
+                <a class="footer-product-item" href=""><i class="fa-solid fa-chevron-right"></i>Office</a>
+                <a class="footer-product-item" href=""><i class="fa-solid fa-chevron-right"></i>Adobe</a>
+                <a class="footer-product-item" href=""><i class="fa-solid fa-chevron-right"></i>Anti Virus</a>
+                <a class="footer-product-item" href=""><i class="fa-solid fa-chevron-right"></i>Google</a>
+                <a class="footer-product-item" href=""><i class="fa-solid fa-chevron-right"></i>Khác</a>
             </div>
         </div>
-    </div>
-    <div class="copy-right p-2">
-        <div class="container">
-            <p class="mb-0"><i class="fa-regular fa-copyright mr-2"></i>Bản quyền thuộc về Hạc Key Shop</p>
+        <div class="footer-right footer-column">
+            <div class="footer-space"></div>
+            <h4 class="footer-title">Liên Hệ</h4>
+            <div class="footer-contact">
+                <p class="footer-information"><i class="fa-solid fa-location-dot"></i>Đại học Nông Lâm TpHCM</p>
+                <p class="footer-information"><i class="fa-solid fa-phone"></i>(+84) 852995378</p>
+                <p class="footer-information"><i class="fa-solid fa-envelope"></i>20130260@st.hcmuaf.edu.vn</p>
+            </div>
+            <div class="footer-social">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
         </div>
     </div>
 </div>
+
 <!--    End Footer-->
 <!--    Begin Back to top-->
 <div id="back-to-top">

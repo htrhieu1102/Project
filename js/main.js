@@ -3,6 +3,7 @@ let prevScroll = window.scrollY;
 window.addEventListener('scroll', function () {
     if (window.scrollY == 0) {
         $('.config-top-banner').css('display', 'block')
+        $('.config-top-banner').css('animation', 'animation-show-display .5s')
     } else {
         $('.config-top-banner').css('display', 'none')
     }
@@ -10,6 +11,8 @@ window.addEventListener('scroll', function () {
         $('#header').css('display', 'none')
     } else {
         $('#header').css('display', 'block')
+        $('#header').css('animation', 'animation-show-display .5s')
+
     }
     prevScroll = window.scrollY;
 })
@@ -27,8 +30,6 @@ let count_click = 0
 $("#icon-search").on('click', function () {
     if (count_click == 0) {
         $("#search-container").css('display', 'block')
-        // $("#main,#footer").css('background', 'rgba(0, 0, 0,0.5)')
-        // $("img").css('opacity', '0.5')
         $('#search-container').css('animation', 'animation-search-show 0.5s')
         count_click = 1;
     } else {
