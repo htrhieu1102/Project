@@ -1191,6 +1191,89 @@
 #content .entry-summary .detail-add-product-to-cart input[type=number]::-webkit-outer-spin-button{
     opacity: 1;
 }
+
+#content .container .row .description{
+    padding-top: 100px;
+}
+
+#content .container .row .description .tab{
+    padding-left: 80px;
+}
+
+#content .container .row .description .tab button{
+    list-style: none;
+    padding: 10px 40px;
+    margin-right: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: linear-gradient(to right,#00c10c 0%,#fff200 50%,#00c10c 100%);
+    background-size: 300%;
+    color: #ffffff;
+}
+
+#content .container .row .description #description_content{
+    margin-left: 80px;
+    padding: 30px 10px;
+}
+
+#content .container .row .description #description_content h3{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#content .container .row .description #description_content p{
+    font-size: 20px;
+    padding: 20px 0px;
+    justify-content: center;
+}
+
+#content .container .row .description #description_content img{
+    padding-bottom: 20px;
+}
+
+#content .container .row .description #rated_content{
+    padding-bottom: 50px;
+}
+
+#content .container .row .description #rated_content .user_rate{
+    display: flex;
+    margin-left: 80px;
+    border-bottom: 1px solid #c0c0c0;
+    height: 200px;
+    width: 100%;
+}
+
+#content .container .row .description #rated_content .user_rate .image_rate{
+    flex-basis: 20%;
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+#content .container .row .description #rated_content .user_rate .image_rate img{
+    border-radius: 10px;
+}
+
+#content .container .row .description #rated_content .user_rate .info_rate{
+    flex-basis: 60%;
+    padding-top: 50px;
+}
+
+#content .container .row .description #rated_content .user_rate .info_rate p{
+    font-size: 20px;
+}
+
+#content .container .row .description #rated_content .user_rate .star{
+    flex-basis: 20%;
+    /*padding-top: 20px;*/
+}
+
+#content .container .row .description #rated_content .user_rate .star img{
+    height: 180px;
+}
+
 /*Detail end*/
 /*Checkout Begin*/
 
@@ -1259,8 +1342,9 @@
 }
 
 #checkout_content .container .checkout_cart .title .return_button ul li:hover {
-    background: #ff7300;
-    padding-left: 15px;
+    color: #2dd100;
+    background: transparent;
+    border: 1px solid #2dd100;
 }
 
 #checkout_content .container .checkout_cart .title_cart{
@@ -1401,16 +1485,17 @@
 #checkout_content .container .checkout_cart .total_price .discount_code button{
     /*padding-top: 20px;*/
     width: 60px;
-    height: 30px;
-    background: #7AB730;
+    background: #2dd100;
     color: white;
     border-radius: 6px;
     border: 1px solid gray;
 }
 
 #checkout_content .container .checkout_cart .total_price .discount_code button:hover {
-    background: #ff7300;
-    padding-left: 20px;
+    color: #2dd100;
+    background: transparent;
+    border: 1px solid #2dd100;
+    padding-left: 15px;
 }
 
 #checkout_content .container .checkout_cart .total_price .discount_code .discount_contain{
@@ -1449,6 +1534,8 @@
     width: 200px;
     border: 1px solid;
     border-radius: 8px;
+    width: 300px;
+    font-weight: bold;
     box-shadow: 0px 4px 15px 6px #b4b4b4;
 }
 
@@ -1561,13 +1648,15 @@
     margin-bottom: 20px;
 }
 
-#checkout_content .container .form_checkout .button_section ul li:hover{
-    opacity: 0.8;
+#checkout_content .container .form_checkout .button_section ul li a:hover{
+    color: #2dd100;
+    background: transparent;
+    border: 1px solid #2dd100;
 }
 
 #checkout_content .container .form_checkout .button_section ul li .payment_button{
     display: inline-flex;
-    background: #7AB730;
+    background: #2dd100;
     text-decoration: none;
     color: white;
     border-radius: 8px;
@@ -1578,7 +1667,7 @@
 
 #checkout_content .container .form_checkout .button_section ul li .return_cart{
     display: inline-flex;
-    background: #7AB730;
+    background: #2dd100;
     text-decoration: none;
     color: white;
     border-radius: 8px;
