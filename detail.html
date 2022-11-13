@@ -52,7 +52,7 @@
                         <a href="cart.html">
                             <span class="icon-cart">
                             <i class="fa-solid fa-bag-shopping"></i>
-                            <span class="amount-cart">0</span>
+                            <span class="amount-cart">3</span>
                         </span>
                         </a>
                     </span>
@@ -105,6 +105,63 @@
                             <input type="number" name="quantity" min="1" step="1" value="1">
                             <button>Thêm vào giỏ hàng</button>
                         </form>
+                    </div>
+                </div>
+                <div class="description">
+<!--                        <ul class="tab_list" role="tablist">-->
+<!--                            <li class="description_tab" id="description_title" role="tab" aria-controls="description_content"><a href="#description_content">Mô tả</a></li>-->
+<!--                            <li class="rated_tab" id="rated_title" role="tab" aria-controls="rated_content"><a href="#rated_content">Đánh giá</a></li>-->
+<!--                        </ul>-->
+                    <div class="tab">
+                        <button class="tablinks" onclick="openSection(event, 'description_content')">Mô tả</button>
+                        <button class="tablinks" onclick="openSection(event, 'rated_content')">Đánh giá</button>
+                    </div>
+                    <div class="tabcontent" id="description_content" role="tabpanel" aria-labelledby="description_title">
+                        <h3>Tổng quan về Windows 11</h3>
+                        <p>Phiên bản Windows 11 hiện đang là từ khóa hot nhất được tìm kiếm nhiều nhất hiện nay, mọi người đang sử dụng Windows đề đang đổ dồn sự chú ý về key Windows 11 mới nhất này. Mặc dù trước đây, Microsoft đã từng tuyên bố Windows 10 sẽ là phiên bản hệ điều hành cuối cùng  nhưng vào thời điểm hiện tại Microsoft đã cho ra mắt key Windows 11 bản quyền  với nhiều tính năng mới mẻ, thú vị mang tính cá nhân hóa cao.</p>
+                        <img src="image/detail_image.jpg" alt="">
+                        <p>Phiên bản Key bản quyền Windows 11 có thiết kế giao diện hoàn toàn mới so với Windows 10, người dùng sẽ được trải nghiệm những tính năng mới, thông minh và tiện ích nhất mà Microsoft mang lại. Đồng thời, trong phiên bản này  có những điểm đặc biệt nổi bật như: Menu Start mới, nâng cấp bàn phím ảo, các biểu tượng hệ thống mới, giao diện Microsoft Store mới, thanh Taskbar mới, cải thiện tính năng nhập liệu bằng giọng nói, giao diện Action Center mới,… Thiết kế này khá tương đồng với Windows 10X, hứa hẹn sẽ cạnh tranh mạnh mẽ với Chrome OS.</p>
+                    </div>
+                    <div class="tabcontent" id="rated_content" role="tabpanel" aria-labelledby="rated_title">
+                        <div class="user_rate">
+                            <div class="image_rate">
+                                <img src="Admin/template/images/faces/face1.jpg" alt="">
+                            </div>
+                            <div class="info_rate">
+                                <h3>Ngô Công Dũng</h3>
+                                <p>Đã đánh giá: 25/10/2022</p>
+                                <p>Bộ office kích hoạt rất nhanh chóng và sử dụng ổn định.</p>
+                            </div>
+                            <div class="star">
+                                <img src="image/5-gold-star.png" alt="">
+                            </div>
+                        </div>
+                        <div class="user_rate">
+                            <div class="image_rate">
+                                <img src="Admin/template/images/faces/face10.jpg" alt="">
+                            </div>
+                            <div class="info_rate">
+                                <h3>Đào Kim Ngọc</h3>
+                                <p>Đã đánh giá: 12/10/2022</p>
+                                <p>Key adobe photoshop rất dễ kích hoạt và sử dụng.</p>
+                            </div>
+                            <div class="star">
+                                <img src="image/5-gold-star.png" alt="">
+                            </div>
+                        </div>
+                        <div class="user_rate">
+                            <div class="image_rate">
+                                <img src="Admin/template/images/faces/face9.jpg" alt="">
+                            </div>
+                            <div class="info_rate">
+                                <h3>Trần Thanh Hải</h3>
+                                <p>Đã đánh giá: 30/09/2022</p>
+                                <p>Bộ key windows 5 thiết bị dùng cho gia đình quá là tiết kiệm.</p>
+                            </div>
+                            <div class="star">
+                                <img src="image/5-gold-star.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -244,6 +301,7 @@
             </div>
         </div>
     </div>
+</div>
     <!--End Login-->
 
     <!--    Script-->
